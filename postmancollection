@@ -1,0 +1,336 @@
+{
+	"info": {
+		"_postman_id": "7315bd07-d144-4420-8821-006208b68e28",
+		"name": "Pontue",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29172453"
+	},
+	"item": [
+		{
+			"name": "criarProduto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nome",
+							"value": "bombom de maça",
+							"type": "text"
+						},
+						{
+							"key": "sabor",
+							"value": "maça",
+							"type": "text"
+						},
+						{
+							"key": "preco",
+							"value": "12.00",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/pontue/produto/criar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pontue",
+						"produto",
+						"criar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "criarCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nome",
+							"value": "André",
+							"type": "text"
+						},
+						{
+							"key": "cpf",
+							"value": "12345678998",
+							"type": "text"
+						},
+						{
+							"key": "genero",
+							"value": "Masculino",
+							"type": "text"
+						},
+						{
+							"key": "cep",
+							"value": "08547632",
+							"type": "text"
+						},
+						{
+							"key": "rua",
+							"value": "rua martinho de siqueira",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Sao Paulo",
+							"type": "text"
+						},
+						{
+							"key": "cidade",
+							"value": "Mogi das Cruzes",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/pontue/cliente/criar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pontue",
+						"cliente",
+						"criar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarProduto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "nome",
+							"value": "bombom de uva",
+							"type": "text"
+						},
+						{
+							"key": "sabor",
+							"value": "uva",
+							"type": "text"
+						},
+						{
+							"key": "preco",
+							"value": "10,00",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/pontue/produto/editar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pontue",
+						"produto",
+						"editar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "nome",
+							"value": "Ramon",
+							"type": "text"
+						},
+						{
+							"key": "cpf",
+							"value": "58263748102",
+							"type": "text"
+						},
+						{
+							"key": "genero",
+							"value": "Não Binarie",
+							"type": "text"
+						},
+						{
+							"key": "cep",
+							"value": "36599658",
+							"type": "text"
+						},
+						{
+							"key": "rua",
+							"value": "Rua Sao Longuinho",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "unido",
+							"type": "text"
+						},
+						{
+							"key": "cidade",
+							"value": "cidadela",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/pontue/cliente/editar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pontue",
+						"cliente",
+						"editar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletarProduto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/pontue/produto/deletar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pontue",
+						"produto",
+						"deletar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletarCliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/pontue/cliente/deletar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pontue",
+						"cliente",
+						"deletar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarProdutos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/pontue/produto/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pontue",
+						"produto",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarCliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/pontue/cliente/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pontue",
+						"cliente",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
