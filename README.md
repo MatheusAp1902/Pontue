@@ -1,66 +1,118 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Para iniciarmos o processo de construção do projeto CRUD feito em php laravel, começamos instalando o XAMPP e o VScode dentro da
+nossa máquina. Os passos de instalação do PHP/XAMPP foram feitos da seguinte forma:
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Para a instalação do PHP no Windows, seguimos os passos abaixo:
 
-## About Laravel
+Usando XAMPP (Pacote de Servidor Web):
+Baixe o XAMPP:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Vá para https://www.apachefriends.org/index.html.
+Baixe a versão mais recente do XAMPP para Windows.
+Instale o XAMPP:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Execute o instalador que você baixou.
+Durante a instalação, você pode escolher quais componentes instalar. Certifique-se de selecionar o PHP.
+Inicie o Servidor Apache:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Após a instalação, abra o painel de controle do XAMPP.
+Inicie o módulo Apache.
+Teste a Instalação:
 
-## Learning Laravel
+Abra um navegador e vá para http://localhost. Se tudo estiver configurado corretamente, você verá a página inicial do XAMPP.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Para instalar o Visual Studio Code no Windows, siga os passos abaixo:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Baixar o Visual Studio Code:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Acesse o site oficial do Visual Studio Code em https://code.visualstudio.com/.
+Clique no botão "Download for Windows" para baixar o instalador.
+Executar o Instalador:
 
-## Laravel Sponsors
+Após o download, clique duas vezes no arquivo de instalação (normalmente chamado VSCodeSetup.exe) para iniciar o processo de instalação.
+Configurar as Opções de Instalação:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Siga as instruções do assistente de instalação.
+Você pode escolher as opções padrão ou personalizar a instalação de acordo com suas preferências.
+Concluir a Instalação:
 
-### Premium Partners
+Após a conclusão da instalação, o Visual Studio Code estará pronto para ser usado.
+Executar o Visual Studio Code:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+Você pode encontrar o Visual Studio Code no menu Iniciar ou na área de trabalho. Clique no ícone para iniciar o aplicativo.
 
-## Contributing
+Feito isso estaremos prontos para instalar o composer.No qual foi feito da forma a baixo:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Baixe e execute o instalador do Composer para Windows a partir do site oficial.
 
-## Code of Conduct
+Siga as instruções no instalador.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Durante a instalação, será solicitado que você escolha o PHP que deseja usar com o Composer. Se você já tiver o PHP instalado, 
+selecione o caminho para o executável PHP. Caso contrário, você pode optar por baixar e instalar o PHP incluído com o Composer.
 
-## Security Vulnerabilities
+Também será necessário instalar o MySQL Workbench. Para isso basta seguir os passos a baixo:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Baixar o MySQL Installer:
 
-## License
+Acesse o site oficial do MySQL: https://dev.mysql.com/downloads/installer/.
+Baixe o MySQL Installer para Windows.
+Executar o MySQL Installer:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Após o download, execute o instalador (mysql-installer-web-community-x.x.xx.x.msi, onde x.x.xx.x representa a versão).
+O instalador exibirá várias opções. Escolha "Custom" para selecionar os componentes que deseja instalar.
+Selecionar Componentes:
+
+No instalador, escolha "MySQL Workbench" entre os componentes disponíveis. Isso instalará o MySQL Workbench, uma ferramenta gráfica 
+para administrar bancos de dados MySQL.
+Configurar o MySQL Workbench:
+
+Complete o processo de instalação, fornecendo as informações necessárias, como senha para o usuário root do MySQL.
+Concluir a Instalação:
+
+Após a instalação, clique em "Next" e depois em "Execute" para concluir o processo.
+Executar o MySQL Workbench:
+
+Agora, você pode encontrar o MySQL Workbench no menu Iniciar ou na área de trabalho. Execute o aplicativo.
+Conectar ao Servidor MySQL:
+
+Ao abrir o MySQL Workbench, você pode conectar-se a um servidor MySQL existente ou criar uma nova conexão.
+
+Abra o MySQL Workbench, crie o banco/schedule. No meu caso criei meu banco com o nome Pontue. Novamente abra o XAMPP e conecte 
+necessário ver se as configurações do workbench está de acordo com o MySQL server do XAMPP, no caso a configuração correta é 
+127.0.0.1, usuario root, senha root e a porta 3306. Se estiver configurado dessa forma no MySQL Workbench basta seguir para 
+a próxima etapa, caso não esteja dessa forma será necessário configurar manualmente. A parte de usuário e senha eu configurei
+de forma pessoal igual está no meu código onde é possivel ver na pasta .env.example no VScode, ele se encontra igual será 
+postado a baixo:
+
+DB_CONNECTION=
+DB_HOST=
+DB_PORT=
+DB_DATABASE=
+DB_USERNAME=
+DB_PASSWORD=
+porém podem ser configurados de outra forma, desde que na pasta .env.example dentro do VScode esteja da mesma forma feita no
+MySQL Workbench. Exemplo a seguir é com o username e password root portanto a configuração seria da seguinte forma:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=Pontue
+DB_USERNAME=root
+DB_PASSWORD=root
+No meu caso eu configurei com meus dados onde eu substitui apenas meu username e a minha password.
+
+Após a etapa anterior, abra o prompt de comando e digite composer para verificar se a instalação foi bem-sucedida.
+
+Com o composer,XAMPP, MySQL Workbench e o VScode instalados, nós vamos startar o apache e o sql dentro do XAMPP.
+Feito isso vamos pegar a pasta do projeto criado no qual nomeei de Pontue e colocar dentro da pasta htdocs no qual o seu caminho é
+c://xampp/htdocs.
+Agora dentro do VScode, configure as informações do banco no documento .env.example para ajustar de acordo com as diretrizes do projeto criado.
+Feito isso abra o prompt de comando e vá até a pasta do projeto, feito isso devemos rodar o comando composer install, na sequência
+composer update e após isso php artisan migrate e após o comando php artisan serve. Após rodar esses comandos já deve estar
+tudo em funcionando. 
+
+A seguir eu precisei fazer a instalação do postman e para isso eu segui os passos a seguir:
+
+Acessar o Site Oficial:
+https://www.postman.com/.
+Baixar o Postman, faça o login, e import a colection que esta na raiz do projeto com o nome postmancollection, 
+la vai ter as requisições do crud de produtos e clientes.
