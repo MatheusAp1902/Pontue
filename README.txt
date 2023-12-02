@@ -117,5 +117,5 @@ https://www.postman.com/.
 Baixar o Postman, faça o login, e import a colection que esta na raiz do projeto com o nome postmancollection, 
 la vai ter as requisições do crud de produtos e clientes.
 
-Para usar os codigos do phpuniti basta ir para a pasta do projeto, ele se encontra em Feature que fica dentro da pasta do lado esquerdo tests, executei os codigos
-do phpuniti usando o comando php artisan test.
+Para usar os codigos do PHPUnit basta ir para a pasta do projeto, ele se encontra em Feature que fica dentro da pasta do lado esquerdo tests, executei os codigos
+do PHPUnit usando o comando php artisan test.
