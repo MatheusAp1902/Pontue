@@ -10,15 +10,15 @@ class Controller_clientes extends Controller
     public function criarCliente(Request $request)
     {
         if(!$request->has('nome') || empty($request->input('nome'))){
-            return response()->json(['message' => 'Nome do cliente não enviado ou vazio'], 400);    
+            return response()->json(['message' => 'Nome do cliente não enviado ou vazio'], 400);
         }
 
         if(!$request->has('cpf') || empty($request->input('cpf'))){
-            return response()->json(['message' => 'CPF do cliente não enviado ou vazio'], 400);    
+            return response()->json(['message' => 'CPF do cliente não enviado ou vazio'], 400);
         }
 
         if(!$request->has('cep') || empty($request->input('cep'))){
-            return response()->json(['message' => 'Cep do cliente não enviado ou vazio'], 400);    
+            return response()->json(['message' => 'Cep do cliente não enviado ou vazio'], 400);
         }
 
         $cliente = new table_clientes();
@@ -30,7 +30,7 @@ class Controller_clientes extends Controller
         $cliente->estado = $request->input('estado');
         $cliente->cidade = $request->input('cidade');
         if($cliente->save()){
-            return response()->json(['message' => 'Cadastro realizado com sucesso'], 201);    
+            return response()->json(['message' => 'Cadastro realizado com sucesso'], 201);
         }
         return response()->json(['message' => 'Erro ao realizar cadastro'], 400);
     }
@@ -44,15 +44,15 @@ class Controller_clientes extends Controller
     public function editarCliente(Request $request)
     {
         if(!$request->has('nome') || empty($request->input('nome'))){
-            return response()->json(['message' => 'Nome do cliente não enviado ou vazio'], 400);    
+            return response()->json(['message' => 'Nome do cliente não enviado ou vazio'], 400);
         }
 
         if(!$request->has('cpf') || empty($request->input('cpf'))){
-            return response()->json(['message' => 'CPF do cliente não enviado ou vazio'], 400);    
+            return response()->json(['message' => 'CPF do cliente não enviado ou vazio'], 400);
         }
 
         if(!$request->has('cep') || empty($request->input('cep'))){
-            return response()->json(['message' => 'Cep do cliente não enviado ou vazio'], 400);    
+            return response()->json(['message' => 'Cep do cliente não enviado ou vazio'], 400);
         }
 
         $cliente = table_clientes::find($request->input('id'));
@@ -64,7 +64,7 @@ class Controller_clientes extends Controller
         $cliente->estado = $request->input('estado');
         $cliente->cidade = $request->input('cidade');
         if($cliente->save()){
-            return response()->json(['message' => 'Cadastro editado com sucesso'], 201);    
+            return response()->json(['message' => 'Cadastro editado com sucesso'], 201);
         }
         return response()->json(['message' => 'Erro ao editar cadastro'], 400);
     }
