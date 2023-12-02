@@ -52,7 +52,6 @@ class Controller_produtos extends Controller
             return response()->json(['message' => 'Preco do produto não enviado ou vazio'], 400);
         }
 
-
         $produto = table_produtos::find($request->input('id'));
         if(!$produto){
             return response()->json(['message' => 'Produto não encontrado'], 401);
